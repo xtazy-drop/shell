@@ -20,7 +20,7 @@ type
     dokOutput
     dokRuntime
 
-const defaultDebugConfig: set[DebugOutputKind] =
+const defaultDebugConfig*: set[DebugOutputKind] =
   block:
     var config: set[DebugOutputKind] = {
       dokOutput, dokError, dokCommand, dokRuntime
